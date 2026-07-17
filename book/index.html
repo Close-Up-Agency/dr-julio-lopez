@@ -752,7 +752,7 @@
                     <span class="brand-sub">Medicina Integrativa</span>
                 </span>
             </a>
-            <a href="#booking-block" class="btn-gold nav-cta-desktop">Agendar Evaluación</a>
+            <a href="#agendar-cita" class="btn-gold nav-cta-desktop">Agendar Evaluación</a>
         </div>
     </header>
 
@@ -784,7 +784,7 @@
                     </div>
 
                     <!-- Right Column: Compact Calendar Card (Cal.com / Typeform Embed Structure) -->
-                    <div class="hero-widget-cell reveal">
+                    <div class="hero-widget-cell reveal" id="agendar-cita">
                         <div class="cal-widget-box">
                             <h3 class="cal-widget-title">Reserva tu sesión de 15 min</h3>
                             <div class="gold-divider" style="margin: 10px auto 6px; width: 44px;"></div>
@@ -792,6 +792,7 @@
 
                             <!-- ANOTACIÓN: Insertar código de Embed Real de Cal.com aquí. El div inferior actúa como el contenedor visual exacto -->
                             <!-- Cal inline embed code begins -->
+                            <!-- ANOTACIÓN: Insertar código de Embed Real de Cal.com aquí. El div inferior actúa como el contenedor visual exacto -->
                             <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-15min"></div>
                             <script type="text/javascript">
                               (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
@@ -806,7 +807,16 @@
                               });
                             
                               Cal.ns["15min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
-                              </script>
+                            
+                              // 🔁 Redirección después de agendar exitosamente
+                              Cal("on", {
+                                action: "bookingSuccessfulV2",
+                                callback: function (e) {
+                                  console.log("Cita agendada exitosamente, redirigiendo a /thank-you/");
+                                  window.location.href = "/thank-you/";  // Cambia a "https://drjuliolopez.online/thank-you" si prefieres la URL absoluta
+                                }
+                              });
+                            </script>
                               <!-- Cal inline embed code ends -->
 
                             <p class="trust-line">
@@ -1018,7 +1028,7 @@
                 <!-- Col 3: Legals -->
                 <div class="footer-col">
                     <h4>Enlaces</h4>
-                    <p><a href="#booking-block">Agendar Sesión</a></p>
+                    <p><a href="#agendar-cita">Agendar Sesión</a></p>
                     <p><a href="#">Aviso de Privacidad</a></p>
                     <p><a href="#">Términos y Condiciones</a></p>
                 </div>
@@ -1032,7 +1042,7 @@
 
     <!-- Section 5: Sticky Bottom CTA (Mobile Viewports Component Only) -->
     <div class="sticky-bottom-cta">
-        <a href="#booking-block" class="sticky-btn">
+        <a href="#agendar-cita" class="sticky-btn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             Agendar Mi Evaluación en Video Gratuita
         </a>
