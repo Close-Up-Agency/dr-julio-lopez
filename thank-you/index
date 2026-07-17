@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Cita Confirmada! - Dr. Julio López</title>
+    <meta name="description" content="Tu solicitud de consulta ha sido confirmada con éxito. Revisa la información para tu videollamada con el Dr. Julio López.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) Reference Template -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NMJ039PLH3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-NMJ039PLH3');
+    </script>
+
+    <style>
+        /* CSS Reset & Base Styles */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --color-navy: #0A2A57;
+            --color-navy-deep: #061B3A;
+            --color-gold: #C69A3E;
+            --color-gold-soft: #E4C877;
+            --color-gold-hover: #B0842B;
+            --color-bg-white: #FFFFFF;
+            --color-bg-light: #F6F4EF;
+            --color-bg-cream: #FBFAF6;
+            --color-border: #E6E2D8;
+            --color-heading: #0A2A57;
+            --color-text-dark: #4B5563;
+            --color-text-muted: #8A93A0;
+            --color-success: #3FA76A;
+            --shadow-soft: 0 18px 50px -20px rgba(10, 42, 87, 0.22);
+            --shadow-card: 0 34px 80px -34px rgba(10, 42, 87, 0.34);
+            --shadow-gold: 0 14px 30px -10px rgba(198, 154, 62, 0.45);
+            --radius-default: 18px;
+            --radius-lg: 26px;
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Inter', sans-serif;
+        }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-weight: 400;
+            color: var(--color-text-dark);
+            line-height: 1.65;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 24px;
+            position: relative;
+            overflow-x: hidden;
+            background:
+                radial-gradient(62% 70% at 85% 0%, rgba(198,154,62,0.10), transparent 60%),
+                radial-gradient(58% 65% at 0% 100%, rgba(10,42,87,0.07), transparent 60%),
+                var(--color-bg-cream);
+        }
+
+        ::selection {
+            background: var(--color-gold-soft);
+            color: var(--color-navy-deep);
+        }
+
+        /* Card */
+        .thankyou-card {
+            background-color: var(--color-bg-white);
+            width: 100%;
+            max-width: 640px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-card);
+            padding: clamp(36px, 5vw, 56px) clamp(24px, 5vw, 52px);
+            border: 1px solid var(--color-border);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(24px);
+            animation: cardIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .thankyou-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--color-gold-soft), var(--color-gold), var(--color-gold-hover));
+        }
+
+        @keyframes cardIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Brand wordmark logo */
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            margin-bottom: 30px;
+        }
+        .brand-mark {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--color-navy), var(--color-navy-deep));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 0 0 0 1px rgba(198,154,62,0.35);
+            flex-shrink: 0;
+        }
+        .brand-mark span {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--color-gold-soft);
+        }
+        .brand-text { display: flex; flex-direction: column; line-height: 1.05; text-align: left; }
+        .brand-name {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: var(--color-navy);
+        }
+        .brand-sub {
+            font-size: 0.66rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-text-muted);
+            font-weight: 500;
+        }
+
+        /* Success Badge */
+        .success-badge {
+            width: 76px;
+            height: 76px;
+            margin: 0 auto 26px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 25%, rgba(63,167,106,0.22), rgba(63,167,106,0.08));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 0 8px rgba(63,167,106,0.06);
+            animation: pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.25s both;
+        }
+        .success-badge svg {
+            width: 38px;
+            height: 38px;
+            stroke: var(--color-success);
+        }
+        .success-badge svg path {
+            stroke-dasharray: 30;
+            stroke-dashoffset: 30;
+            animation: draw 0.6s ease 0.55s forwards;
+        }
+        @keyframes pop {
+            0% { transform: scale(0.4); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes draw {
+            to { stroke-dashoffset: 0; }
+        }
+
+        .status-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: rgba(198, 154, 43, 0.12);
+            color: var(--color-gold-hover);
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 7px 16px;
+            border-radius: 999px;
+            margin-bottom: 18px;
+        }
+        .status-tag::before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--color-gold);
+        }
+
+        h1 {
+            font-family: var(--font-serif);
+            color: var(--color-navy);
+            font-size: clamp(2.1rem, 5vw, 2.9rem);
+            font-weight: 600;
+            line-height: 1.15;
+            letter-spacing: -0.01em;
+            margin-bottom: 14px;
+            text-wrap: balance;
+        }
+
+        /* Global Accent Divider */
+        .gold-divider {
+            width: 64px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+            margin: 0 auto 28px;
+            position: relative;
+        }
+        .gold-divider::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--color-gold);
+        }
+
+        .lead {
+            font-size: 1.075rem;
+            line-height: 1.7;
+            color: var(--color-text-dark);
+            max-width: 480px;
+            margin: 0 auto 28px;
+        }
+        .lead strong { color: var(--color-navy); font-weight: 600; }
+
+        /* Steps list — presents the message content aesthetically */
+        .steps {
+            list-style: none;
+            text-align: left;
+            background: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-default);
+            padding: 8px 26px;
+            margin-bottom: 34px;
+        }
+        .steps li {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 18px 0;
+        }
+        .steps li:not(:last-child) {
+            border-bottom: 1px solid var(--color-border);
+        }
+        .step-icon {
+            flex-shrink: 0;
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(198,154,62,0.16), rgba(198,154,62,0.06));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .step-icon svg {
+            width: 20px;
+            height: 20px;
+            stroke: var(--color-gold-hover);
+        }
+        .step-text {
+            font-size: 0.98rem;
+            line-height: 1.55;
+            color: var(--color-text-dark);
+        }
+        .step-text strong {
+            display: block;
+            font-size: 1rem;
+            color: var(--color-navy);
+            font-weight: 600;
+            margin-bottom: 2px;
+            font-family: var(--font-sans);
+        }
+
+        /* Action area */
+        .action-prompt {
+            font-size: 1rem;
+            margin-bottom: 18px;
+            font-weight: 500;
+            color: var(--color-navy);
+        }
+
+        .action-container {
+            display: flex;
+            gap: 14px;
+        }
+        .action-cell { flex: 1; }
+
+        .btn-social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+            padding: 15px 18px;
+            border-radius: 999px;
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease, background-color 0.2s ease, border-color 0.2s ease;
+        }
+        .btn-social svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: #FFFFFF;
+            box-shadow: 0 12px 26px -10px rgba(37, 211, 102, 0.55);
+        }
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 16px 32px -10px rgba(37, 211, 102, 0.6);
+            filter: brightness(1.03);
+        }
+
+        .btn-instagram {
+            background-color: var(--color-bg-white);
+            color: var(--color-navy);
+            border: 1px solid var(--color-border);
+            box-shadow: var(--shadow-soft);
+        }
+        .btn-instagram:hover {
+            transform: translateY(-2px);
+            border-color: var(--color-gold);
+            color: var(--color-gold-hover);
+        }
+        .btn-instagram svg { stroke: currentColor; }
+
+        /* Footer note */
+        .footer-note {
+            margin-top: 34px;
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            border-top: 1px solid var(--color-border);
+            padding-top: 22px;
+        }
+        .footer-note .footer-brand-name {
+            color: var(--color-navy);
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 560px) {
+            .action-container { flex-direction: column; }
+            .steps { padding: 4px 20px; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .thankyou-card, .success-badge, .success-badge svg path { animation: none; opacity: 1; transform: none; stroke-dashoffset: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="thankyou-card">
+
+        <!-- Logo / Brand wordmark -->
+        <!-- ANOTACIÓN: Reemplazar por el logo oficial (SVG o PNG transparente) del Dr. Julio López -->
+        <a href="#" class="brand" aria-label="Dr. Julio López">
+            <span class="brand-mark"><span>JL</span></span>
+            <span class="brand-text">
+                <span class="brand-name">Dr. Julio López</span>
+                <span class="brand-sub">Medicina Integrativa</span>
+            </span>
+        </a>
+
+        <!-- Success Status Notification Icon -->
+        <div class="success-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6 9 17l-5-5"/>
+            </svg>
+        </div>
+
+        <!-- Status tag + Title -->
+        <div class="status-tag">Cita Confirmada con Éxito</div>
+        <h1>¡Todo Listo para tu Sesión!</h1>
+        <div class="gold-divider"></div>
+
+        <!-- Main Content Message (reworded layout, same information) -->
+        <p class="lead">
+            Gracias, hemos recibido tu solicitud de consulta y ha quedado <strong>confirmada tu cita</strong>. Esto es lo que sigue:
+        </p>
+
+        <ul class="steps">
+            <li>
+                <span class="step-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                </span>
+                <span class="step-text">
+                    <strong>Revisa tu correo</strong>
+                    En tu correo puedes encontrar la liga para unirte a la videollamada.
+                </span>
+            </li>
+            <li>
+                <span class="step-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                </span>
+                <span class="step-text">
+                    <strong>Te contactaremos pronto</strong>
+                    En unos momentos uno de los asistentes de la clínica se comunicará contigo para darte información adicional previa a la cita y poder resolver cualquier duda que tengas.
+                </span>
+            </li>
+        </ul>
+
+        <!-- Interactive External Links Area -->
+        <p class="action-prompt">¿Deseas adelantar alguna duda o conocer más de nuestro enfoque?</p>
+
+        <div class="action-container">
+            <!-- WhatsApp Trigger -->
+            <div class="action-cell">
+                <!-- ANOTACIÓN: Reemplazar el enlace del href por tu link personalizado de WhatsApp de la clínica (e.g., https://wa.me/5281...) -->
+                <a href="https://wa.me/526593938809?text=Hola,%20acabo%20de%20agendar%20mi%20evaluación%20médica%20en%20video%20con%20el%20Dr.%20Julio" class="btn-social btn-whatsapp" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.548 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.464 3.488"/>
+                    </svg>
+                    Enviar WhatsApp Directo
+                </a>
+            </div>
+
+            <!-- Instagram Trigger -->
+            <div class="action-cell">
+                <!-- ANOTACIÓN: Reemplazar el enlace por la URL del perfil oficial de Instagram del doctor -->
+                <a href="https://www.instagram.com/dr.julio_lopex?igsh=MXZteTN1ZzQyN3M5Zw==" class="btn-social btn-instagram" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                    Instagram
+                </a>
+            </div>
+        </div>
+
+        <!-- Tiny Professional Legal/Context Note -->
+        <footer class="footer-note">
+            <p><span class="footer-brand-name">Dr. Julio López</span> — Medicina Integrativa y Bienestar Emocional • Chihuahua, Chihuahua</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
