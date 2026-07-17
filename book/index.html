@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Julio López - Medicina Integrativa y Bienestar Emocional</title>
+    <meta name="description" content="Es el Biomagnetismo Médico la Respuesta para tu Ansiedad, Estrés o Dolor Crónico? Agenda tu videollamada de 15 minutos con el Dr. Julio López.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) Reference Template -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NMJ039PLH3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-NMJ039PLH3');
+    </script>
+
+    <!-- Meta Pixel Code Reference Template -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '4475803265984362');
+        fbq('track', 'PageView');
+    </script>
+
+    <style>
+        /* CSS Reset & Base Styles */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --color-navy: #0A2A57;
+            --color-navy-deep: #061B3A;
+            --color-gold: #C69A3E;
+            --color-gold-soft: #E4C877;
+            --color-gold-hover: #B0842B;
+            --color-bg-white: #FFFFFF;
+            --color-bg-light: #F6F4EF;
+            --color-bg-cream: #FBFAF6;
+            --color-border: #E6E2D8;
+            --color-heading: #0A2A57;
+            --color-text-dark: #4B5563;
+            --color-text-muted: #8A93A0;
+            --color-success: #3FA76A;
+            --shadow-soft: 0 18px 50px -20px rgba(10, 42, 87, 0.22);
+            --shadow-card: 0 24px 60px -28px rgba(10, 42, 87, 0.28);
+            --shadow-gold: 0 14px 30px -10px rgba(198, 154, 62, 0.45);
+            --radius-default: 18px;
+            --radius-lg: 26px;
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-weight: 400;
+            background-color: var(--color-bg-white);
+            color: var(--color-text-dark);
+            line-height: 1.65;
+        }
+
+        /* Typography Scale */
+        h1, h2, h3 {
+            font-family: var(--font-serif);
+            color: var(--color-heading);
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        h1 { font-size: clamp(2.4rem, 4.4vw, 3.5rem); line-height: 1.12; letter-spacing: -0.02em; }
+        h2 { font-size: clamp(2rem, 3.4vw, 2.75rem); line-height: 1.2; text-align: center; }
+        h3 { font-size: 1.55rem; line-height: 1.3; }
+        p { font-size: 1.075rem; }
+
+        ::selection {
+            background: var(--color-gold-soft);
+            color: var(--color-navy-deep);
+        }
+
+        /* Layout Grid and Utilities */
+        .container {
+            width: 100%;
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-padding {
+            padding: clamp(64px, 9vw, 118px) 0;
+        }
+
+        .bg-light {
+            background-color: var(--color-bg-light);
+        }
+
+        .section-head {
+            max-width: 720px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            color: var(--color-gold);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            margin-bottom: 14px;
+        }
+
+        /* Global Accent Divider */
+        .gold-divider {
+            width: 64px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+            margin: 18px auto 30px;
+            position: relative;
+        }
+        .gold-divider::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--color-gold);
+        }
+
+        /* Buttons */
+        .btn-gold {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--color-gold-soft), var(--color-gold));
+            color: var(--color-navy-deep);
+            text-decoration: none;
+            padding: 15px 30px;
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 999px;
+            box-shadow: var(--shadow-gold);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+        }
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 38px -8px rgba(198, 154, 62, 0.55);
+            filter: brightness(1.03);
+        }
+
+        /* Top Promo Notification Bar */
+        .top-bar {
+            background: linear-gradient(90deg, var(--color-navy-deep), var(--color-navy));
+            color: #EEF3FB;
+            text-align: center;
+            padding: 11px 16px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .top-bar svg { color: var(--color-gold-soft); flex-shrink: 0; }
+
+        /* Header / Navbar */
+        header {
+            background-color: rgba(255, 255, 255, 0.82);
+            backdrop-filter: saturate(180%) blur(14px);
+            -webkit-backdrop-filter: saturate(180%) blur(14px);
+            border-bottom: 1px solid var(--color-border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 16px 24px;
+        }
+
+        /* Brand wordmark logo */
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        .brand-mark {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--color-navy), var(--color-navy-deep));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 0 0 0 1px rgba(198,154,62,0.35);
+            flex-shrink: 0;
+        }
+        .brand-mark span {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--color-gold-soft);
+        }
+        .brand-text { display: flex; flex-direction: column; line-height: 1.05; }
+        .brand-name {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: var(--color-navy);
+        }
+        .brand-sub {
+            font-size: 0.66rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-text-muted);
+            font-weight: 500;
+        }
+
+        /* Section 1: Hero */
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding-top: clamp(50px, 6vw, 84px);
+            padding-bottom: clamp(60px, 8vw, 104px);
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(60% 80% at 85% 0%, rgba(198,154,62,0.08), transparent 60%),
+                radial-gradient(55% 70% at 0% 100%, rgba(10,42,87,0.05), transparent 60%),
+                var(--color-bg-cream);
+            z-index: -1;
+        }
+
+        .hero-block {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 56px;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-navy);
+            background: rgba(198, 154, 62, 0.12);
+            border: 1px solid rgba(198, 154, 62, 0.3);
+            font-weight: 600;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            padding: 8px 16px;
+            border-radius: 999px;
+            margin-bottom: 22px;
+        }
+        .hero-badge::before {
+            content: '';
+            width: 7px; height: 7px; border-radius: 50%;
+            background: var(--color-gold);
+        }
+
+        .hero-subheadline {
+            margin-top: 24px;
+            margin-bottom: 30px;
+            color: var(--color-text-dark);
+            font-size: 1.16rem;
+            line-height: 1.7;
+            max-width: 560px;
+        }
+
+        .hero-portrait {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-card);
+            display: block;
+        }
+
+        .hero-media {
+            position: relative;
+        }
+        .hero-media::before {
+            content: '';
+            position: absolute;
+            inset: 14px -14px -14px 14px;
+            border: 1px solid rgba(198,154,62,0.4);
+            border-radius: var(--radius-lg);
+            z-index: -1;
+        }
+
+        .hero-proof {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .hero-proof-item { display: flex; align-items: center; gap: 9px; font-size: 0.92rem; color: var(--color-navy); font-weight: 500; }
+        .hero-proof-item svg { color: var(--color-gold); flex-shrink: 0; }
+
+        /* Widget Card */
+        .cal-widget-box {
+            background-color: var(--color-bg-white);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: 34px;
+            box-shadow: var(--shadow-card);
+            position: relative;
+        }
+        .cal-widget-box::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 5px;
+            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+            background: linear-gradient(90deg, var(--color-gold-soft), var(--color-gold));
+        }
+        .cal-widget-title {
+            font-family: var(--font-serif);
+            color: var(--color-navy);
+            font-weight: 600;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .cal-widget-caption {
+            text-align: center;
+            font-size: 0.92rem;
+            color: var(--color-text-muted);
+            margin-bottom: 20px;
+        }
+
+        .cal-embed-placeholder {
+            width: 100%;
+            min-height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 24px;
+            border-radius: var(--radius-default);
+            background:
+                repeating-linear-gradient(45deg, rgba(10,42,87,0.02) 0 12px, rgba(10,42,87,0.04) 12px 24px);
+            border: 1px dashed var(--color-border);
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .trust-line {
+            margin-top: 22px;
+            font-size: 0.88rem;
+            color: var(--color-text-muted);
+            text-align: center;
+            line-height: 1.55;
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+        }
+        .trust-line svg { color: var(--color-success); flex-shrink: 0; margin-top: 2px; }
+        .trust-line strong { color: var(--color-navy); }
+
+        /* Section 2: How it works */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            margin-top: 54px;
+        }
+
+        .process-card {
+            background: var(--color-bg-white);
+            border-radius: var(--radius-lg);
+            padding: 40px 30px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--color-border);
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .process-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-card);
+        }
+        .process-step-num {
+            position: absolute;
+            top: 22px;
+            right: 26px;
+            font-family: var(--font-serif);
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: rgba(198, 154, 62, 0.18);
+            line-height: 1;
+        }
+        .icon-circle {
+            width: 66px;
+            height: 66px;
+            margin: 0 auto 24px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(10,42,87,0.06), rgba(198,154,62,0.14));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-navy);
+        }
+        .icon-circle svg { width: 30px; height: 30px; }
+        .process-card h3 { margin-bottom: 12px; color: var(--color-navy); }
+        .process-card p { font-size: 1rem; }
+
+        /* Section 3: Bio & Evidence */
+        .bio-evidence-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 56px;
+            margin-top: 54px;
+            align-items: start;
+        }
+
+        .doctor-img {
+            width: 100%;
+            aspect-ratio: 5 / 4;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-card);
+            margin-bottom: 28px;
+            display: block;
+        }
+
+        .bio-card {
+            background: var(--color-bg-white);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            box-shadow: var(--shadow-soft);
+        }
+        .bio-credentials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 18px;
+        }
+        .cred-chip {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--color-navy);
+            background: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+            padding: 6px 13px;
+            border-radius: 999px;
+        }
+        .bio-text {
+            font-size: 1.08rem;
+            line-height: 1.75;
+            color: var(--color-text-dark);
+        }
+        .bio-text strong { color: var(--color-navy); }
+
+        .testimonial-heading {
+            font-family: var(--font-serif);
+            color: var(--color-navy);
+            font-size: 1.7rem;
+            margin-bottom: 22px;
+        }
+
+        .testimonial-card {
+            background-color: var(--color-bg-white);
+            border-radius: var(--radius-default);
+            padding: 28px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--color-border);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .testimonial-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card); }
+        .testimonial-card::before {
+            content: '\201C';
+            position: absolute;
+            top: 4px;
+            left: 22px;
+            font-family: var(--font-serif);
+            font-size: 4.5rem;
+            line-height: 1;
+            color: rgba(198, 154, 62, 0.22);
+        }
+        .stars {
+            display: inline-flex;
+            gap: 3px;
+            margin-bottom: 12px;
+            color: var(--color-gold);
+        }
+        .stars svg { width: 18px; height: 18px; }
+        .testimonial-quote {
+            font-style: italic;
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            line-height: 1.55;
+            color: var(--color-navy);
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+        .testimonial-meta {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--color-navy);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .testimonial-avatar {
+            width: 34px; height: 34px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-navy), var(--color-gold));
+            color: #fff;
+            display: inline-flex; align-items: center; justify-content: center;
+            font-size: 0.85rem; font-weight: 700;
+        }
+
+        /* Section 4: FAQ Accordion */
+        .faq-container {
+            max-width: 820px;
+            margin: 50px auto 0;
+        }
+
+        .faq-item {
+            background-color: var(--color-bg-white);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-default);
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .faq-item.active {
+            box-shadow: var(--shadow-soft);
+            border-color: rgba(198, 154, 62, 0.5);
+        }
+
+        .faq-trigger {
+            width: 100%;
+            background: none;
+            border: none;
+            outline: none;
+            text-align: left;
+            padding: 22px 60px 22px 26px;
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--color-navy);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+        .faq-trigger:hover { color: var(--color-gold-hover); }
+        .faq-trigger::after {
+            content: '';
+            position: absolute;
+            right: 26px;
+            top: 50%;
+            width: 12px;
+            height: 12px;
+            border-right: 2px solid var(--color-gold);
+            border-bottom: 2px solid var(--color-gold);
+            transform: translateY(-70%) rotate(45deg);
+            transition: transform 0.3s ease;
+        }
+        .faq-item.active .faq-trigger::after {
+            transform: translateY(-30%) rotate(-135deg);
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+        .faq-content-inner {
+            padding: 0 26px 22px;
+            font-size: 1.05rem;
+            color: var(--color-text-dark);
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(180deg, var(--color-navy), var(--color-navy-deep));
+            color: #D6DEEC;
+            padding: 72px 0 32px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.12);
+            padding-bottom: 44px;
+            margin-bottom: 28px;
+        }
+        .footer-col h4 {
+            font-family: var(--font-serif);
+            color: var(--color-gold-soft);
+            font-size: 1.3rem;
+            margin-bottom: 18px;
+        }
+        .footer-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+        .footer-brand .brand-mark { box-shadow: inset 0 0 0 1px rgba(198,154,62,0.5); }
+        .footer-brand .brand-name { color: #fff; }
+        .footer-brand .brand-sub { color: rgba(214,222,236,0.7); }
+        .footer-col p, .footer-col a {
+            font-size: 0.95rem;
+            color: #C3CEE0;
+            text-decoration: none;
+            line-height: 1.9;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .footer-col a { transition: color 0.2s ease; }
+        .footer-col a:hover { color: var(--color-gold-soft); }
+        .footer-col svg { color: var(--color-gold); flex-shrink: 0; }
+        .footer-bottom {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #8F9BB2;
+        }
+
+        /* Sticky Bottom CTA (Mobile) */
+        .sticky-bottom-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255,255,255,0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 -6px 24px rgba(10,42,87,0.14);
+            border-top: 1px solid var(--color-border);
+            padding: 12px 20px;
+            z-index: 999;
+            text-align: center;
+            display: none;
+        }
+        .sticky-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, var(--color-gold-soft), var(--color-gold));
+            color: var(--color-navy-deep);
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: 600;
+            font-size: 1.02rem;
+            border-radius: 999px;
+            box-shadow: var(--shadow-gold);
+        }
+
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(26px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+            html { scroll-behavior: auto; }
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-block, .bio-evidence-grid {
+                grid-template-columns: 1fr;
+                gap: 44px;
+            }
+            .process-grid { grid-template-columns: 1fr; gap: 22px; }
+            .footer-grid { grid-template-columns: 1fr; gap: 34px; }
+
+            .hero-info-cell { text-align: center; }
+            .hero-badge, .hero-proof { justify-content: center; }
+            .hero-subheadline { margin-left: auto; margin-right: auto; }
+            .hero-media::before { display: none; }
+
+            .sticky-bottom-cta { display: block; }
+            body { padding-bottom: 78px; }
+        }
+
+        @media (max-width: 600px) {
+            .nav-cta-desktop { display: none; }
+            .cal-widget-box { padding: 24px; }
+            .brand-sub { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="top-bar">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        Consulta en Video 1-a-1 Gratuita — Sin Necesidad de Datos de Pago
+    </div>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="nav-container">
+            <!-- ANOTACIÓN: Reemplazar por el logo oficial (SVG o PNG transparente) del Dr. Julio López -->
+            <a href="#booking-block" class="brand" aria-label="Dr. Julio López">
+                <span class="brand-mark"><span>JL</span></span>
+                <span class="brand-text">
+                    <span class="brand-name">Dr. Julio López</span>
+                    <span class="brand-sub">Medicina Integrativa</span>
+                </span>
+            </a>
+            <a href="#booking-block" class="btn-gold nav-cta-desktop">Agendar Evaluación</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Section 1: Hero Block Above the Fold -->
+        <section class="hero" id="booking-block">
+            <div class="container">
+                <div class="hero-block">
+
+                    <!-- Left Column: Copywriting & Context -->
+                    <div class="hero-info-cell reveal">
+                        <span class="hero-badge">Medicina Integrativa y Bienestar Emocional</span>
+                        <h1>¿Es el Biomagnetismo Médico la Respuesta para tu Ansiedad, Estrés o Dolor Crónico? Descubramos Juntos.</h1>
+                        <p class="hero-subheadline">
+                            El Dr. Julio (Médico Cirujano y Coach) evaluará personalmente tu caso en una videollamada privada de 15 minutos. Si tu situación se adapta a su enfoque bioenergético, tu atención podrá ser en su consultorio o en la comodidad de tu hogar.
+                        </p>
+
+                        <!-- ANOTACIÓN: Espacio reservado para un retrato profesional y empático del doctor interactuando en su espacio de consulta -->
+                        <div class="hero-media">
+                            <img class="hero-portrait" src="/images/dr-julio-hero.png" alt="Retrato profesional y cálido del Dr. Julio López en su consultorio">
+                        </div>
+
+                        <div class="hero-proof">
+                            <span class="hero-proof-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Evaluación honesta</span>
+                            <span class="hero-proof-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> 100% Confidencial</span>
+                            <span class="hero-proof-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Solo 15 minutos</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Compact Calendar Card (Cal.com / Typeform Embed Structure) -->
+                    <div class="hero-widget-cell reveal">
+                        <div class="cal-widget-box">
+                            <h3 class="cal-widget-title">Reserva tu sesión de 15 min</h3>
+                            <div class="gold-divider" style="margin: 10px auto 6px; width: 44px;"></div>
+                            <p class="cal-widget-caption">Elige el horario que mejor se adapte a ti</p>
+
+                            <!-- ANOTACIÓN: Insertar código de Embed Real de Cal.com aquí. El div inferior actúa como el contenedor visual exacto -->
+                            <div class="cal-embed-placeholder">
+                                [WIDGET DE CALENDARIO COMPACTO — Cal.com / Elemento Interactivo Inline]
+                            </div>
+
+                            <p class="trust-line">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                <span>Tu información es completamente confidencial. Esta es una evaluación médica y honesta para encontrar el origen de tu dolor, <strong>no una trampa de ventas</strong>.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: How It Works / Process Steps -->
+        <section class="section-padding bg-light">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">El Proceso</span>
+                    <h2>Desde una Charla hasta la Claridad — El Proceso Simple</h2>
+                    <div class="gold-divider"></div>
+                </div>
+
+                <div class="process-grid">
+
+                    <!-- Step 1 -->
+                    <div class="process-card reveal">
+                        <span class="process-step-num">01</span>
+                        <!-- ANOTACIÓN: icono minimalista de línea delgada (calendario) -->
+                        <div class="icon-circle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        </div>
+                        <h3>Elige un Horario</h3>
+                        <p>Selecciona el espacio de 15 minutos en video que mejor se adapte a tu día desde nuestro calendario.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="process-card reveal">
+                        <span class="process-step-num">02</span>
+                        <!-- ANOTACIÓN: icono minimalista de línea delgada (video o conversación) -->
+                        <div class="icon-circle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <h3>Habla con el Dr. Julio</h3>
+                        <p>Él escuchará profundamente tu historia de salud, analizando tus síntomas físicos y cargas emocionales atrapadas.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="process-card reveal">
+                        <span class="process-step-num">03</span>
+                        <!-- ANOTACIÓN: icono minimalista de línea delgada (escudo o check de salud) -->
+                        <div class="icon-circle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                        </div>
+                        <h3>Obtén Guía Honesta</h3>
+                        <p>Sabrás al instante si el Biomagnetismo es la vía correcta para recuperar tu paz, y coordinarán los siguientes pasos.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Professional Biography & Medical Testimonials -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Confianza y Experiencia</span>
+                    <h2>El Especialista detrás de tu Sanación</h2>
+                    <div class="gold-divider"></div>
+                </div>
+
+                <div class="bio-evidence-grid">
+
+                    <!-- Left: Profile Snapshot -->
+                    <div class="bio-cell reveal">
+                        <!-- ANOTACIÓN: Reemplazar por fotografía complementaria en el consultorio sereno con iluminación natural -->
+                        <img class="doctor-img" src="/images/dr-julio-clinic.png" alt="Dr. Julio López en una interacción médica en su espacio clínico sereno">
+                        <div class="bio-card">
+                            <div class="bio-credentials">
+                                <span class="cred-chip">Médico Cirujano</span>
+                                <span class="cred-chip">Coach</span>
+                                <span class="cred-chip">Biomagnetismo Médico</span>
+                                <span class="cred-chip">Gerencia Hospitalaria</span>
+                            </div>
+                            <p class="bio-text">
+                                <strong>Dr. Julio, Médico Cirujano, Coach</strong> y especialista en Biomagnetismo Médico con Diplomado en Gerencia Hospitalaria. Combina la ciencia médica con el enfoque holístico porque entendió que la medicina tradicional receta para el síntoma, pero el cuerpo necesita ser escuchado para liberar el origen celular y emocional del dolor.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Patient Social Proof (Testimonials) -->
+                    <div class="evidence-cell reveal">
+                        <h3 class="testimonial-heading">Testimonios Reales</h3>
+
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card">
+                            <div class="stars" aria-label="5 de 5 estrellas">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <p class="testimonial-quote">
+                                "Me sentí escuchada por primera vez en esa llamada gratuita. Ahora recibo las terapias con imanes en mi propio hogar y mi ansiedad por fin desapareció; volví a recuperar mi paz."
+                            </p>
+                            <div class="testimonial-meta">
+                                <span class="testimonial-avatar">SM</span>
+                                Sarah M.
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card">
+                            <div class="stars" aria-label="5 de 5 estrellas">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <p class="testimonial-quote">
+                                "Tenía miedo de que fuera otra estafa de internet o una confrontación dura, pero el Dr. Julio fue súper honesto y empático. Sin presiones, solo verdadera guía médica."
+                            </p>
+                            <div class="testimonial-meta">
+                                <span class="testimonial-avatar">JL</span>
+                                James L.
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Collapsible Accordion FAQs -->
+        <section class="section-padding bg-light">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Resolvemos tus Dudas</span>
+                    <h2>Preguntas Frecuentes</h2>
+                    <div class="gold-divider"></div>
+                </div>
+
+                <div class="faq-container reveal">
+
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">¿La videollamada es realmente gratis?</button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                <p>Absolutamente. Sin tarjetas, sin trucos y sin compromisos. Es un espacio exclusivo para que ambos evaluemos si la terapia magnética y bioenergética hace match con las necesidades de tu cuerpo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">¿Qué pasa si mi caso no es apto para el Biomagnetismo?</button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                <p>El Dr. Julio te lo dirá de manera respetuosa y transparente desde la primera sesión. Al ser Médico Cirujano, cuenta con el criterio clínico para redirigirte formalmente hacia la alternativa de salud que más te convenga.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">¿Cómo funcionan las visitas a domicilio?</button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                <p>Es un servicio totalmente profesional, cómodo y discreto en la ciudad. El Dr. Julio llega a tu casa con el equipo de imanes listo para realizar el rastreo bioenergético. Tú solo te relajas en la comodidad de tu hogar mientras equilibras tu cuerpo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Block Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Col 1: Brand Info -->
+                <div class="footer-col">
+                    <!-- ANOTACIÓN: Alternativa visual de logo versión fondo oscuro -->
+                    <div class="footer-brand">
+                        <span class="brand-mark"><span>JL</span></span>
+                        <span class="brand-text">
+                            <span class="brand-name">Dr. Julio López</span>
+                            <span class="brand-sub">Medicina Integrativa</span>
+                        </span>
+                    </div>
+                    <p>Medicina Integrativa y Bienestar Emocional</p>
+                </div>
+
+                <!-- Col 2: Contact Details -->
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Consultorio: Dirección Médica, Monterrey</p>
+                    <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Teléfono / WhatsApp: +52 (81) 0000-0000</p>
+                    <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Email: contacto@drjuliolopez.com</p>
+                </div>
+
+                <!-- Col 3: Legals -->
+                <div class="footer-col">
+                    <h4>Enlaces</h4>
+                    <p><a href="#booking-block">Agendar Sesión</a></p>
+                    <p><a href="#">Aviso de Privacidad</a></p>
+                    <p><a href="#">Términos y Condiciones</a></p>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Julio López. Todos los derechos reservados. Diseñado bajo lineamientos de salud premium.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Section 5: Sticky Bottom CTA (Mobile Viewports Component Only) -->
+    <div class="sticky-bottom-cta">
+        <a href="#booking-block" class="sticky-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Agendar Mi Evaluación en Video Gratuita
+        </a>
+    </div>
+
+    <!-- Interactive Logic (Accordion + scroll reveal) -->
+    <script>
+        function toggleFaq(button) {
+            const item = button.parentElement;
+            const content = button.nextElementSibling;
+            const isActive = item.classList.contains('active');
+
+            document.querySelectorAll('.faq-item').forEach(i => {
+                i.classList.remove('active');
+                i.querySelector('.faq-content').style.maxHeight = null;
+            });
+
+            if (!isActive) {
+                item.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        }
+
+        // Scroll reveal animation
+        (function () {
+            var els = document.querySelectorAll('.reveal');
+            if (!('IntersectionObserver' in window)) {
+                els.forEach(function (el) { el.classList.add('visible'); });
+                return;
+            }
+            var obs = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            els.forEach(function (el) { obs.observe(el); });
+        })();
+    </script>
+</body>
+</html>
