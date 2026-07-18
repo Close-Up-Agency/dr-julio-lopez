@@ -809,7 +809,7 @@
                               Cal.ns["15min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
                             
                               // 🔁 Redirección después de agendar exitosamente
-                              Cal("on", {
+                              Cal["15min"]("on", {
                                 action: "bookingSuccessfulV2",
                                 callback: function (e) {
                                   console.log("Cita agendada exitosamente, redirigiendo a /thank-you/");
